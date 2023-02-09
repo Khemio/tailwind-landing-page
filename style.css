@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.btn {
+  @apply shadow-md py-3 px-6 rounded-md transition duration-300
+}
+
+.btn-purple {
+  @apply bg-bookmark-purple text-white
+}
+
+.btn-white {
+  @apply bg-bookmark-white
+}
+
+.accordion-item-content, [data-menu] {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 1000ms ease;
+}
+
+i {
+  transition: rotate 1000ms ease;
+}
+
+.active i{
+  rotate: 180deg;
+}
+
